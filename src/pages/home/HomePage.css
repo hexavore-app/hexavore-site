@@ -1,0 +1,19 @@
+.home__sources {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 1.25em;
+}
+
+.home__sources li::marker {
+  color: var(--accent);
+}
+
+.home__disclaimer {
+  max-width: var(--measure);
+  margin-top: 96px;
+  padding: 16px 20px;
+  border-left: 3px solid var(--outline-strong);
+  color: var(--on-surface-variant);
+  font-size: 0.9375rem;
+}

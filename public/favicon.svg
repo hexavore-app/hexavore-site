@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- L'hexagone des six compteurs, tous atteints, dans l'ordre angulaire de l'application. -->
+  <path fill="#00e5ff" d="M16 16 L23.5 3.01 L8.5 3.01 Z"/>
+  <path fill="#ff2d95" d="M16 16 L31 16 L23.5 3.01 Z"/>
+  <path fill="#39ff88" d="M16 16 L23.5 28.99 L31 16 Z"/>
+  <path fill="#9d4edd" d="M16 16 L8.5 28.99 L23.5 28.99 Z"/>
+  <path fill="#d9a5ff" d="M16 16 L1 16 L8.5 28.99 Z"/>
+  <path fill="#ffb020" d="M16 16 L8.5 3.01 L1 16 Z"/>
+</svg>

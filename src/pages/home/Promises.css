@@ -1,0 +1,20 @@
+.promises {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.promises__item {
+  padding: 8px 16px;
+  border: 1px solid var(--outline-strong);
+  border-radius: var(--radius-full);
+  font-weight: 500;
+}
+
+.promises__body {
+  max-width: var(--measure);
+  color: var(--on-surface-variant);
+}

@@ -1,0 +1,17 @@
+.section {
+  display: grid;
+  gap: 16px;
+  margin-top: 96px;
+}
+
+.section__title {
+  font-size: clamp(1.5rem, 1.2rem + 1.2vw, 1.75rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.section__intro {
+  max-width: var(--measure);
+  color: var(--on-surface-variant);
+  font-size: 1.0625rem;
+}

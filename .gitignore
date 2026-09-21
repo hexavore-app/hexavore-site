@@ -1,0 +1,6 @@
+node_modules/
+dist/
+dist-server/
+
+# L'emplacement local du depot de l'application : propre a chaque machine.
+.env.local

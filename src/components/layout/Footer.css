@@ -1,0 +1,27 @@
+.footer {
+  margin-top: 96px;
+  border-top: 1px solid var(--outline);
+  background: var(--surface);
+}
+
+.footer__inner {
+  display: grid;
+  gap: 12px;
+  padding-block: 32px 40px;
+}
+
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 24px;
+  font-weight: 500;
+}
+
+.footer__nav a {
+  padding-block: 12px;
+}
+
+.footer__note {
+  color: var(--on-surface-variant);
+  font-size: 0.875rem;
+}

@@ -1,0 +1,29 @@
+.macro-hexagon {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.macro-hexagon__quarter {
+  fill: var(--macro);
+  stroke: var(--macro);
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+  /* La lueur est un contour flou, pas une silhouette : c'est la regle de l'application. */
+  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--macro) 55%, transparent));
+}
+
+.macro-hexagon__goal {
+  fill: none;
+  stroke: var(--outline-strong);
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
+/* Aucune lueur en theme clair : un halo sur fond clair ressemble a un defaut d'affichage. */
+@media (prefers-color-scheme: light) {
+  .macro-hexagon__quarter {
+    filter: none;
+  }
+}

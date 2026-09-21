@@ -1,0 +1,27 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.layout__main {
+  flex: 1;
+  outline: none;
+}
+
+.layout__skip {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 10;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  background: var(--surface-variant);
+  color: var(--on-surface);
+  transform: translateY(-200%);
+}
+
+.layout__skip:focus-visible {
+  transform: none;
+}

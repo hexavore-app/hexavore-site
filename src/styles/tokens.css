@@ -1,0 +1,92 @@
+/*
+ * Les jetons du design system de l'application (docs/08 du depot hexavore), et rien
+ * d'autre ne definit de couleur. Sombre par defaut : l'application est pensee pour lui.
+ */
+:root {
+  color-scheme: dark light;
+
+  --bg: #08080c;
+  --surface: #111119;
+  --surface-variant: #1a1a26;
+  --outline: #2a2a3a;
+  --outline-strong: #4a4a60;
+  --on-surface: #ededf5;
+  --on-surface-variant: #9a9ab0;
+
+  /* Les six macros. Chacune porte un sens et un seul : jamais une decoration. */
+  --calories: #00e5ff;
+  --protein: #ff2d95;
+  --carbs: #9d4edd;
+  --sugars: #d9a5ff;
+  --fat: #ffb020;
+  --fiber: #39ff88;
+
+  /* L'encre des liens et des actions, qui doit tenir le contraste AA pour du texte. */
+  --accent: var(--calories);
+  --accent-soft: color-mix(in srgb, var(--calories) 12%, transparent);
+  --accent-glow: color-mix(in srgb, var(--calories) 35%, transparent);
+
+  --font: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --radius-field: 8px;
+  --radius-card: 16px;
+  --radius-sheet: 24px;
+  --radius-full: 999px;
+
+  --gutter: 16px;
+  --measure: 68ch;
+  --content: 72rem;
+}
+
+@media (min-width: 40rem) {
+  :root {
+    --gutter: 32px;
+  }
+}
+
+/*
+ * Le theme clair de l'application : fonds inverses, macros assombries de 25 %, aucune
+ * lueur. Ces 25 % suffisent a un trait, pas a du texte (docs/08, § Theme clair) : en clair,
+ * aucune teinte de macro n'ecrit, et l'accent prend sa propre encre, a 5,8:1 sur blanc.
+ */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #fafafc;
+    --surface: #ffffff;
+    --surface-variant: #efeff4;
+    --outline: #d5d5e0;
+    --outline-strong: #a0a0b4;
+    --on-surface: #14141c;
+    --on-surface-variant: #5a5a70;
+
+    --calories: #00abbf;
+    --protein: #bf2270;
+    --carbs: #763ba6;
+    --sugars: #a37cbf;
+    --fat: #bf8418;
+    --fiber: #2bbf66;
+
+    --accent: #00707f;
+    --accent-soft: color-mix(in srgb, #00707f 8%, transparent);
+    --accent-glow: transparent;
+  }
+}
+
+.macro--calories {
+  --macro: var(--calories);
+}
+.macro--protein {
+  --macro: var(--protein);
+}
+.macro--fiber {
+  --macro: var(--fiber);
+}
+.macro--carbs {
+  --macro: var(--carbs);
+}
+.macro--sugars {
+  --macro: var(--sugars);
+}
+.macro--fat {
+  --macro: var(--fat);
+}

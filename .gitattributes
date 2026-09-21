@@ -1,0 +1,8 @@
+# LF dans le depot, quelle que soit la machine : sans ca, un aller-retour Windows /
+# Linux produit des diffs entiers sur des fichiers dont pas un caractere n'a change.
+* text=auto eol=lf
+
+*.png   binary
+*.jpg   binary
+*.webp  binary
+*.woff2 binary

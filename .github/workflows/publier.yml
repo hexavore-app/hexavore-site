@@ -1,0 +1,82 @@
+name: Publier
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  # Le depot de l'application le demande quand sa politique de confidentialite change.
+  repository_dispatch:
+    types: [ politique ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Une publication ne s'interrompt pas en route : la suivante attend son tour.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  construire:
+    name: Verifier et construire
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          path: site
+
+      # La politique de confidentialite vit a cote du code de l'application : on n'en
+      # extrait que le dossier, depuis sa branche principale.
+      - uses: actions/checkout@v7
+        with:
+          repository: hexavore-app/hexavore
+          path: app
+          sparse-checkout: confidentialite
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Dependances
+        working-directory: site
+        run: npm ci
+
+      - name: Types et tests
+        working-directory: site
+        env:
+          HEXAVORE_APP_DIR: ../app
+        run: npm run check
+
+      - name: Construction
+        working-directory: site
+        env:
+          HEXAVORE_APP_DIR: ../app
+        run: npm run build
+
+      - name: Pages
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: site/dist
+
+  publier:
+    name: Publier sur GitHub Pages
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: construire
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploiement.outputs.page_url }}
+
+    steps:
+      - id: deploiement
+        uses: actions/deploy-pages@v5

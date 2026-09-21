@@ -1,0 +1,40 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+  gap: 12px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  padding: 20px;
+  border: 1px solid var(--outline);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+}
+
+.card__icon {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+  border-radius: var(--radius-field);
+  background: var(--surface-variant);
+  color: var(--accent);
+}
+
+.card__title {
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+
+.card__body {
+  color: var(--on-surface-variant);
+  font-size: 0.9375rem;
+}

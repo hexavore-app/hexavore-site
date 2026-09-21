@@ -1,0 +1,17 @@
+<!doctype html>
+<!--
+  Coquille du serveur de developpement, et d'elle seul. La construction la remplace par
+  une page HTML complete par adresse (scripts/prerender.ts), sans une ligne de JavaScript.
+-->
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>Hexavore</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/entry-client.tsx"></script>
+  </body>
+</html>

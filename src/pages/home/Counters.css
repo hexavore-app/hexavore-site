@@ -1,0 +1,60 @@
+.counters {
+  display: grid;
+  align-items: center;
+  gap: 32px;
+  margin: 8px 0 0;
+  padding: 32px var(--gutter);
+  border: 1px solid var(--outline);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+}
+
+@media (min-width: 48rem) {
+  .counters {
+    grid-template-columns: minmax(0, 20rem) minmax(0, 1fr);
+    padding: 40px;
+  }
+}
+
+.counters__figure {
+  width: min(100%, 20rem);
+  justify-self: center;
+}
+
+.counters__legend {
+  display: grid;
+  /* Deux colonnes, puis trois : la lecture ligne a ligne suit toujours le sens horaire. */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 64rem) {
+  .counters__legend {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.counters__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+}
+
+.counters__swatch {
+  flex: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background: var(--macro);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--macro) 45%, transparent);
+}
+
+@media (prefers-color-scheme: light) {
+  .counters__swatch {
+    box-shadow: none;
+  }
+}

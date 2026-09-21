@@ -1,0 +1,44 @@
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 24px;
+  border: 1.5px solid var(--accent);
+  border-radius: var(--radius-full);
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 0 16px var(--accent-glow);
+  transition:
+    background-color 100ms ease-out,
+    box-shadow 100ms ease-out,
+    transform 100ms ease-out;
+}
+
+/* Un degrade de la teinte a faible opacite, jamais un aplat neon : il imposerait du texte
+   fonce par-dessus, ce que la regle de contraste interdit. */
+.button-link--primary {
+  background: linear-gradient(180deg, var(--accent-soft), transparent);
+}
+
+.button-link--secondary {
+  border-color: var(--outline-strong);
+  color: var(--on-surface);
+  box-shadow: none;
+}
+
+.button-link:hover {
+  background-color: var(--accent-soft);
+  text-decoration: none;
+}
+
+.button-link:active {
+  transform: scale(0.97);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button-link {
+    transition: none;
+  }
+}

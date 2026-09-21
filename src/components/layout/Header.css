@@ -1,0 +1,46 @@
+.header {
+  border-bottom: 1px solid var(--outline);
+}
+
+.header__bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 24px;
+  padding-block: 14px;
+}
+
+.header__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--on-surface);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.125rem;
+  letter-spacing: -0.01em;
+}
+
+.header__mark {
+  width: 28px;
+}
+
+.header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+.header__nav a {
+  color: var(--on-surface-variant);
+  text-decoration: none;
+  /* La cible tactile de 48 dp de l'application, sans grossir le texte. */
+  padding-block: 12px;
+}
+
+.header__nav a:hover {
+  color: var(--on-surface);
+}

@@ -46,7 +46,7 @@ La publication part d'elle-même à chaque poussée sur `main`, et chaque fois q
 1. **GitHub Pages** : *Settings → Pages → Source : GitHub Actions*.
 2. **Le domaine** : acheter `hexavore.app`, puis déclarer chez le registraire les enregistrements de GitHub Pages — `A` vers `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`, `AAAA` vers `2606:50c0:8000::153` à `2606:50c0:8003::153`, et `www` en `CNAME` vers `hexavore-app.github.io`. Saisir `hexavore.app` dans *Settings → Pages → Custom domain*, puis cocher *Enforce HTTPS*. Un `.app` n'existe qu'en HTTPS : le site reste injoignable tant que GitHub n'a pas émis son certificat.
 3. **Vérifier le domaine chez GitHub** (*organisation → Settings → Pages*), pour qu'un tiers ne puisse pas s'en emparer si le site est un jour désactivé.
-4. **Le jeton de republication** : un jeton à accès fin, limité à `hexavore-site` avec le droit *Contents : read and write*, enregistré dans le dépôt de l'application sous le nom `SITE_DISPATCH_TOKEN`.
+4. **La clé de republication** : une clé de déploiement de ce dépôt, en écriture, dont la moitié privée est enregistrée dans le dépôt de l'application sous le nom `SITE_DEPLOY_KEY`. Le dépôt de l'application s'en sert pour pousser ici un commit vide quand la politique change, et cette poussée déclenche la publication. Une clé plutôt qu'un jeton : elle n'ouvre que ce dépôt et n'expire pas.
 5. **Pour Google Drive, plus tard** : vérifier le domaine dans la Search Console de Google. La vérification de marque exige que l'accueil et la politique soient sur un domaine prouvé.
 
 ## Licence

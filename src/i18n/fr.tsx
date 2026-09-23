@@ -25,7 +25,7 @@ export const fr: Dictionary = {
 
   home: {
     meta: {
-      title: 'Hexavore — suivi alimentaire libre pour Android',
+      title: 'Hexavore, suivi alimentaire libre pour Android',
       description:
         'Notez ce que vous mangez en quelques secondes : code-barres, photo, recherche ou simple phrase. Six compteurs, sans compte, sans publicité, sans télémétrie.',
     },
@@ -33,7 +33,7 @@ export const fr: Dictionary = {
       eyebrow: 'Suivi alimentaire pour Android',
       title: 'Hexavore',
       lead: 'Notez ce que vous mangez en quelques secondes. Six compteurs, et rien d’autre : pas de compte, pas de publicité, pas de télémétrie.',
-      status: 'En développement — pas encore publiée.',
+      status: 'En développement, pas encore publiée.',
       primaryAction: 'Suivre le projet sur GitHub',
       secondaryAction: 'Ce qui quitte votre téléphone',
     },
@@ -52,7 +52,7 @@ export const fr: Dictionary = {
         },
         search: {
           title: 'Chercher un aliment',
-          body: '3 484 aliments de la table CIQUAL, hors ligne, dès la deuxième lettre — « creme brulee » trouve « crème brûlée ».',
+          body: '3 484 aliments de la table CIQUAL, hors ligne, dès la deuxième lettre. « creme brulee » trouve « crème brûlée ».',
         },
         sentence: {
           title: 'Décrire en une phrase',
@@ -119,10 +119,10 @@ export const fr: Dictionary = {
       ),
       sources: [
         <>
-          <a href="https://ciqual.anses.fr">Table CIQUAL 2025</a> — ANSES, Licence Ouverte Etalab 2.0
+          <a href="https://ciqual.anses.fr">Table CIQUAL 2025</a> de l’ANSES, sous Licence Ouverte Etalab 2.0
         </>,
         <>
-          <a href="https://world.openfoodfacts.org">Open Food Facts</a> — contributeurs d’Open Food Facts, licence
+          <a href="https://world.openfoodfacts.org">Open Food Facts</a>, par ses contributeurs, sous licence
           ODbL 1.0
         </>,
       ],
@@ -133,17 +133,17 @@ export const fr: Dictionary = {
 
   privacy: {
     meta: {
-      title: 'Politique de confidentialité — Hexavore',
+      title: 'Politique de confidentialité · Hexavore',
       description:
-        'Ce que l’application Hexavore et ce site font de vos données : presque rien, et c’est écrit ici en détail.',
+        'Ce que l’application Hexavore et ce site font de vos données, et ce qui quitte votre téléphone.',
     },
     site: {
       title: 'Ce site',
       paragraphs: [
         <>
           {site.origin.replace('https://', '')} est un site statique hébergé par GitHub Pages. Il ne dépose aucun
-          cookie, ne mesure pas son audience, n’exécute aucun JavaScript et ne charge rien depuis un autre site — ses
-          polices comprises.
+          cookie, ne mesure pas son audience, n’exécute aucun JavaScript et ne charge rien depuis un autre site,
+          ses polices comprises.
         </>,
         <>
           Comme pour toute page web, l’hébergeur voit l’adresse IP des visiteurs : GitHub la conserve pour des raisons
@@ -155,7 +155,7 @@ export const fr: Dictionary = {
 
   legal: {
     meta: {
-      title: 'Mentions légales — Hexavore',
+      title: 'Mentions légales · Hexavore',
       description: 'Éditeur, hébergeur et licences du site d’Hexavore.',
     },
     title: 'Mentions légales',

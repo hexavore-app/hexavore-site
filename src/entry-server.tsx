@@ -45,7 +45,7 @@ export function renderNotFound(stylesheets: readonly string[]): string {
     defaultLocale,
     <Document
       lang={defaultLocale}
-      title={`${text.title} — ${site.name}`}
+      title={`${text.title} · ${site.name}`}
       description={text.body}
       stylesheets={stylesheets}
       alternates={null}

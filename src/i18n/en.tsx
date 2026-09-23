@@ -25,7 +25,7 @@ export const en: Dictionary = {
 
   home: {
     meta: {
-      title: 'Hexavore — open-source food tracking for Android',
+      title: 'Hexavore, open-source food tracking for Android',
       description:
         'Log what you eat in seconds: barcode, photo, search or a plain sentence. Six counters, no account, no ads, no telemetry.',
     },
@@ -33,7 +33,7 @@ export const en: Dictionary = {
       eyebrow: 'Food tracking for Android',
       title: 'Hexavore',
       lead: 'Log what you eat in seconds. Six counters, and nothing else: no account, no ads, no telemetry.',
-      status: 'In development — not released yet.',
+      status: 'In development, not released yet.',
       primaryAction: 'Follow the project on GitHub',
       secondaryAction: 'What leaves your phone',
     },
@@ -118,10 +118,10 @@ export const en: Dictionary = {
       ),
       sources: [
         <>
-          <a href="https://ciqual.anses.fr">CIQUAL 2025 table</a> — ANSES, Etalab Open License 2.0
+          <a href="https://ciqual.anses.fr">CIQUAL 2025 table</a> by ANSES, under the Etalab Open License 2.0
         </>,
         <>
-          <a href="https://world.openfoodfacts.org">Open Food Facts</a> — Open Food Facts contributors, ODbL 1.0 license
+          <a href="https://world.openfoodfacts.org">Open Food Facts</a>, by its contributors, under the ODbL 1.0 license
         </>,
       ],
     },
@@ -131,15 +131,15 @@ export const en: Dictionary = {
 
   privacy: {
     meta: {
-      title: 'Privacy policy — Hexavore',
-      description: 'What the Hexavore app and this website do with your data: almost nothing, described here in detail.',
+      title: 'Privacy policy · Hexavore',
+      description: 'What the Hexavore app and this website do with your data, and what leaves your phone.',
     },
     site: {
       title: 'This website',
       paragraphs: [
         <>
           {site.origin.replace('https://', '')} is a static website hosted by GitHub Pages. It sets no cookie, does not
-          measure its audience, runs no JavaScript and loads nothing from any other website — fonts included.
+          measure its audience, runs no JavaScript and loads nothing from any other website, fonts included.
         </>,
         <>
           As with any web page, the host sees visitors’ IP addresses: GitHub keeps them for security purposes, under{' '}
@@ -151,7 +151,7 @@ export const en: Dictionary = {
 
   legal: {
     meta: {
-      title: 'Legal notice — Hexavore',
+      title: 'Legal notice · Hexavore',
       description: 'Publisher, host and licenses of the Hexavore website.',
     },
     title: 'Legal notice',

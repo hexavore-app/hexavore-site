@@ -12,8 +12,12 @@ export interface SiteFacts {
   readonly siteRepository: string
   readonly contact: string
   /**
-   * L'éditeur. `null` : un particulier qui édite à titre non professionnel peut ne rendre
-   * publique que l'identité de l'hébergeur (LCEN). Un nom ici l'affiche à la place.
+   * L'éditeur.
+   *
+   * `null` reste possible : un particulier qui édite à titre non professionnel peut ne
+   * rendre publique que l'identité de l'hébergeur (LCEN). Le nom y est quand même,
+   * parce qu'un projet qui demande à qui l'installe de lui confier des informations de
+   * santé peut bien dire qui il est.
    */
   readonly publisher: string | null
   readonly host: {
@@ -31,7 +35,7 @@ export const site: SiteFacts = {
   repository: 'https://github.com/hexavore-app/hexavore',
   siteRepository: 'https://github.com/hexavore-app/hexavore-site',
   contact: 'contact@hexavore.app',
-  publisher: null,
+  publisher: 'Charly Flu',
   host: {
     name: 'GitHub, Inc.',
     address: '88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA',

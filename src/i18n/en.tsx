@@ -47,7 +47,7 @@ export const en: Dictionary = {
         },
         photo: {
           title: 'Photograph the plate',
-          body: 'An AI model recognizes the foods and their quantities; the nutrition values come from public databases, not from its memory.',
+          body: 'An AI model recognizes the foods and their quantities; the nutrition values come from public databases. When none of them knows the food, the model estimates them, and the screen says so on the line.',
         },
         search: {
           title: 'Search for a food',
@@ -205,8 +205,8 @@ export const en: Dictionary = {
         title: 'Personal data',
         paragraphs: [
           <>
-            Neither this website nor the app collects personal data. The details are in the{' '}
-            <a href={href('privacy', 'en')}>privacy policy</a>.
+            This website collects no personal data. The app only passes any to the project in the emails you
+            choose to send it. The details are in the <a href={href('privacy', 'en')}>privacy policy</a>.
           </>,
         ],
       },

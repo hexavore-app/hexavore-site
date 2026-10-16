@@ -33,8 +33,8 @@ export const fr: Dictionary = {
       eyebrow: 'Suivi alimentaire pour Android',
       title: 'Hexavore',
       lead: 'Notez ce que vous mangez en quelques secondes. Six compteurs, et rien d’autre : pas de compte, pas de publicité, pas de télémétrie.',
-      status: 'En développement, pas encore publiée.',
-      primaryAction: 'Suivre le projet sur GitHub',
+      status: 'Disponible sur Google Play, pour Android 8 et plus.',
+      primaryAction: 'Télécharger sur Google Play',
       secondaryAction: 'Ce qui quitte votre téléphone',
     },
     entry: {
@@ -113,8 +113,9 @@ export const fr: Dictionary = {
       title: 'Libre, et sourcée',
       body: (
         <>
-          Le <a href={site.repository}>code de l’application</a> est public, sous licence GPL-3.0. Les valeurs
-          nutritionnelles viennent de deux sources ouvertes, créditées dans l’application :
+          Le <a href={site.repository}>code de l’application</a> est public, sous licence GPL-3.0. Hors
+          estimations de l’IA, signalées comme telles, les valeurs nutritionnelles viennent de deux sources
+          ouvertes, créditées dans l’application :
         </>
       ),
       sources: [
@@ -128,7 +129,7 @@ export const fr: Dictionary = {
       ],
     },
     disclaimer:
-      'Hexavore est un outil de suivi personnel. Ce n’est pas un dispositif médical et il ne remplace pas l’avis d’un professionnel de santé.',
+      'Hexavore est un outil de suivi personnel. Ce n’est pas un dispositif médical : il ne diagnostique, ne traite, ne guérit ni ne prévient aucune maladie. Pour un avis, un diagnostic ou un traitement, consultez un professionnel de santé.',
   },
 
   privacy: {

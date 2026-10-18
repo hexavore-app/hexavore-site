@@ -48,7 +48,7 @@ export const fr: Dictionary = {
         },
         photo: {
           title: 'Photographier l’assiette',
-          body: 'Un modèle d’IA reconnaît les aliments et leurs quantités ; les valeurs nutritionnelles viennent de bases publiques, pas de sa mémoire.',
+          body: 'Un modèle d’IA reconnaît les aliments et leurs quantités ; les valeurs nutritionnelles viennent de bases publiques. Quand aucune ne connaît l’aliment, le modèle les estime, et l’écran le dit sur la ligne.',
         },
         search: {
           title: 'Chercher un aliment',
@@ -208,7 +208,8 @@ export const fr: Dictionary = {
         title: 'Données personnelles',
         paragraphs: [
           <>
-            Ni ce site ni l’application ne collectent de données personnelles. Le détail est dans la{' '}
+            Ce site ne collecte aucune donnée personnelle. L’application n’en transmet au projet que dans les
+            courriels que vous choisissez de lui envoyer. Le détail est dans la{' '}
             <a href={href('privacy', 'fr')}>politique de confidentialité</a>.
           </>,
         ],

@@ -33,8 +33,8 @@ export const en: Dictionary = {
       eyebrow: 'Food tracking for Android',
       title: 'Hexavore',
       lead: 'Log what you eat in seconds. Six counters, and nothing else: no account, no ads, no telemetry.',
-      status: 'In development, not released yet.',
-      primaryAction: 'Follow the project on GitHub',
+      status: 'Available on Google Play, for Android 8 and later.',
+      primaryAction: 'Get it on Google Play',
       secondaryAction: 'What leaves your phone',
     },
     entry: {
@@ -112,8 +112,8 @@ export const en: Dictionary = {
       title: 'Open, and sourced',
       body: (
         <>
-          The <a href={site.repository}>app’s source code</a> is public, under the GPL-3.0 license. Nutrition values
-          come from two open sources, credited in the app:
+          The <a href={site.repository}>app’s source code</a> is public, under the GPL-3.0 license. Apart from AI
+          estimates, which are marked as such, nutrition values come from two open sources, credited in the app:
         </>
       ),
       sources: [
@@ -126,7 +126,7 @@ export const en: Dictionary = {
       ],
     },
     disclaimer:
-      'Hexavore is a personal tracking tool. It is not a medical device and does not replace the advice of a health professional.',
+      'Hexavore is a personal tracking tool. It is not a medical device and does not diagnose, treat, cure, or prevent any medical condition. Consult a healthcare professional for medical advice, diagnosis, or treatment.',
   },
 
   privacy: {

@@ -10,7 +10,9 @@ import './Hero.css'
  * Le titre de la page, ce que fait l'application, et où en est le projet.
  *
  * **Le statut est dit en premier regard**, pas en bas de page : une vitrine qui laisse
- * chercher un bouton de téléchargement qui n'existe pas encore trompe par omission.
+ * chercher un bouton de téléchargement qui n'existe pas encore trompe par omission. Depuis
+ * la 1.0.0, ce bouton existe, et c'est le premier ; le code reste lié dans l'en-tête et le
+ * pied de page.
  */
 export function Hero() {
   const { locale, t } = useLocale()
@@ -26,7 +28,7 @@ export function Hero() {
           {hero.status}
         </p>
         <div className="hero__actions">
-          <ButtonLink href={site.repository} variant="primary">
+          <ButtonLink href={site.store} variant="primary">
             {hero.primaryAction}
           </ButtonLink>
           <ButtonLink href={href('privacy', locale)} variant="secondary">

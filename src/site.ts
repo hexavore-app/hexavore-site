@@ -10,6 +10,8 @@ export interface SiteFacts {
   readonly origin: string
   readonly repository: string
   readonly siteRepository: string
+  /** La fiche de l'application sur Google Play, par son identifiant applicatif. */
+  readonly store: string
   readonly contact: string
   /**
    * L'éditeur.
@@ -34,6 +36,7 @@ export const site: SiteFacts = {
   origin: 'https://hexavore.app',
   repository: 'https://github.com/hexavore-app/hexavore',
   siteRepository: 'https://github.com/hexavore-app/hexavore-site',
+  store: 'https://play.google.com/store/apps/details?id=app.hexavore',
   contact: 'contact@hexavore.app',
   publisher: 'Charly Flu',
   host: {

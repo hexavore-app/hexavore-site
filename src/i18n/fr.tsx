@@ -75,7 +75,7 @@ export const fr: Dictionary = {
       figureLabel: 'L’hexagone des six compteurs, sur une journée d’exemple.',
     },
     features: {
-      title: 'Ce qu’elle fait',
+      title: 'Ce qu’il fait',
       items: [
         {
           title: 'Un objectif à votre mesure',
@@ -104,7 +104,7 @@ export const fr: Dictionary = {
       ],
     },
     promises: {
-      title: 'Ce qu’elle ne fait pas',
+      title: 'Ce qu’il ne fait pas',
       items: ['Pas de compte.', 'Pas de serveur.', 'Pas de publicité.', 'Pas d’abonnement.', 'Pas de télémétrie.'],
       body: 'L’IA est facultative. Si vous vous en servez, la requête part de votre téléphone avec votre propre clé, directement chez le fournisseur que vous avez choisi : le projet ne voit rien passer.',
       link: 'Tout ce qui quitte votre téléphone, dans le détail',
